@@ -1,8 +1,14 @@
 {
   "version": 2,
-  "name": "petgram-server",
+  "name": "petgram-server-flir",
   "alias": ["petgram-api"],
-  "builds": [{ "src": "index.js", "use": "@now/node" }],
+  "builds": [
+    {
+      "src": "package.json",
+      "use": "@vercel/static-build",
+      "config": { "distDir": "public" }
+    }
+  ],
   "routes": [{
     "headers": {
         "Access-Control-Allow-Origin": "*",

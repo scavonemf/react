@@ -7,7 +7,8 @@
     "build": "webpack",
     "start": "webpack-dev-server",
     "test": "echo \"Error: no test specified\" && exit 1",
-    "lint": "standard"
+    "lint": "standard",
+    "vercel-build": "npm run build"
   },
   "repository": {
     "type": "git",
@@ -35,9 +36,13 @@
     "babel-loader": "^8.2.2",
     "react": "^17.0.2",
     "react-dom": "^17.0.2",
+    "react-icons": "^4.2.0",
+    "styled-components": "^5.2.1",
+    "vercel": "^21.3.3",
     "webpack-dev-middleware": "^4.1.0"
   },
   "standard": {
+    "parser": "babel-eslint",
     "ignore": [
       "/api/**"
     ]
