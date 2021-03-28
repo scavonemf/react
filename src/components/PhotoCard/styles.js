@@ -1,5 +1,12 @@
 import styled from 'styled-components'
 
+import {fadeIn } from '../../styles/Animation'
+
+
+export const Article = styled.article`
+  min-height: 200px;
+`
+
 export const ImgWrapper = styled.div`
   padding: 56.25% 0 0 0;
   overflow: hidden;
@@ -11,6 +18,7 @@ export const ImgWrapper = styled.div`
 `
 
 export const Img = styled.img`
+  ${fadeIn()}
   box-shadow: 0 10px 14px rgba(0,0,0,.2);
   height: 100%;
   object-fit: cover;
