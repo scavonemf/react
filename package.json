@@ -5,10 +5,11 @@
   "main": "index.js",
   "scripts": {
     "build": "webpack",
-    "start": "webpack-dev-server",
+    "dev": "webpack-dev-server --history-api-fallback",
     "test": "echo \"Error: no test specified\" && exit 1",
     "lint": "standard",
     "vercel-build": "npm run build"
+
   },
   "repository": {
     "type": "git",
@@ -31,10 +32,14 @@
     "webpack-dev-server": "^3.11.0"
   },
   "dependencies": {
+    "@apollo/client": "^3.3.13",
     "@babel/core": "^7.13.10",
     "@babel/preset-env": "^7.13.12",
+    "@reach/router": "^1.3.4",
+    "apollo": "^2.32.5",
     "apollo-boost": "^0.4.9",
     "babel-loader": "^8.2.2",
+    "client": "0.0.1",
     "graphql": "^15.5.0",
     "react": "^17.0.2",
     "react-apollo": "^3.1.5",

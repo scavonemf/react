@@ -25,7 +25,7 @@ export const PhotoCardWithQuery = (props) => {
      <>
      {loading 
         ? <h1>loading</h1>
-        : <PhotoCard id={data.photo.id} src={data.photo.src} likes={data.photo.likes}/>
+        : <PhotoCard {...data.photo}/>
      }
      </>
   )
